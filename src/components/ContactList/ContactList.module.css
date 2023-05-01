@@ -1,0 +1,27 @@
+.contactsList {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+}
+.contactsListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+.contactsListItemSpan {
+  margin-right: 16px;
+}
+.formContainer {
+  margin-top: 30px;
+  /* margin-bottom: 50px; */
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  padding: 24px;
+  /* background-color: aquamarine; */
+  width: 450px;
+  border: 2px solid rgba(1, 59, 100, 0.267);
+  border-radius: 10px;
+}

@@ -1,16 +1,22 @@
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
 import { ContactItem } from '../ContactItem/ContactItem';
+import css from './ContactList.module.css';
 
 export const ContactList = ({ contacts, onDelete }) => {
   return (
     <>
-      {contacts.length !== 0 &&
-        contacts.map(({ name, number }) => (
-          <ul key={nanoid()}>
-            <ContactItem name={name} number={number} onDelete={onDelete} />
-          </ul>
-        ))}
+      <ul className={css.contactsList}>
+        {contacts.length !== 0 &&
+          contacts.map(({ name, number }) => (
+            <ContactItem
+              key={nanoid()}
+              name={name}
+              number={number}
+              onDelete={onDelete}
+            />
+          ))}
+      </ul>
     </>
   );
 };
